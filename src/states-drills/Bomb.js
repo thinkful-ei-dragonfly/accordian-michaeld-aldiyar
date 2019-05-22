@@ -9,7 +9,7 @@ class Bomb extends React.Component {
 
   componentDidMount() {
     this.interval = setInterval(() => {
-      console.log('tick')
+      // console.log('tick')
       this.setState ({
         count: this.state.count+1
       })
@@ -34,7 +34,7 @@ class Bomb extends React.Component {
   }
 
   render() {
-    console.log(this.state)
+    // console.log(this.state)
  
     return (
       <div>

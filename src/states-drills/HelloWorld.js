@@ -27,7 +27,7 @@ class HelloWorld extends React.Component {
 
 
   render() {
-    console.log(this.state);
+    // console.log(this.state);
     return (
       <div>
         <p>Hello, {this.state.who}</p>
