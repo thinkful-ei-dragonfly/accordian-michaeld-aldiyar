@@ -1,9 +1,9 @@
 import React from 'react';
 import './App.css';
-import HelloWorld from './states-drills/HelloWorld';
-import Bomb from './states-drills/Bomb';
-import RouletteGun from './states-drills/RouletteGun';
-import Accordian from './Accordian';
+// import HelloWorld from './states-drills/HelloWorld';
+// import Bomb from './states-drills/Bomb';
+// import RouletteGun from './states-drills/RouletteGun';
+import Accordian from './states-drills/Accordian';
 
 const sections = [
   {
@@ -22,14 +22,14 @@ const sections = [
 class App extends React.Component {
   render() {
     return (
-      <>
-        <HelloWorld />
-        <Bomb />
-        <RouletteGun />
+      // <>
+      //   <HelloWorld />
+      //   <Bomb />
+      //   <RouletteGun />
+      // </>
         <div>
         <Accordian sections={sections} />
         </div>
-      </>
     );
   }
 }
