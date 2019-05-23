@@ -30,10 +30,14 @@ export default class Accordion extends React.Component {
   render() {
     const { activeSectionIndex } = this.state
     const { sections } = this.props
+    let emptyli
+    if (sections.length === 0) {
+      emptyli= <li></li>
+    }
     return (
-      <ul className="Accordion">
-        {sections.map((section, id) =>
-          this.renderButtons(section, id, activeSectionIndex)
+      <ul className="Accordion"> {emptyli}
+        {sections.map((section, index) =>
+          this.renderButtons(section, index, activeSectionIndex)
           )}
       </ul>
     )
