@@ -3,7 +3,7 @@ import './App.css';
 // import HelloWorld from './states-drills/HelloWorld';
 // import Bomb from './states-drills/Bomb';
 // import RouletteGun from './states-drills/RouletteGun';
-import Accordian from './states-drills/Accordian';
+import Accordion from './states-drills/Accordion';
 
 const sections = [
   {
@@ -28,7 +28,7 @@ class App extends React.Component {
       //   <RouletteGun />
       // </>
         <div>
-        <Accordian sections={sections} />
+        <Accordion sections={sections} />
         </div>
     );
   }

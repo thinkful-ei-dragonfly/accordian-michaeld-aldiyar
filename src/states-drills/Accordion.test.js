@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Accordian from './Accordian';
+import Accordian from './Accordion';
 import renderer from 'react-test-renderer';
 import { exportAllDeclaration } from '@babel/types';
 
@@ -27,7 +27,7 @@ describe(`Accordian Component`, () => {
   })
 
   it('renders empty <li>', () => {
-    const tree = renderer.create(<Accordian sections={sections}/>).toJSON()
+    const tree = renderer.create(<Accordian />).toJSON()
     exportAllDeclaration(tree).toMatchSnaposhot()
   })
 })
